@@ -22,3 +22,12 @@
         [x] Write logic to select correct operator
         [x] Call correct function and pass var1 & var2
         [x] Return result from function
+
+[x] Create a basic HTML calculator with buttons for each digit 
+    and operator (including =). Don’t worry about making them
+    functional just yet.
+
+        [x] There should also be a display for the calculator. 
+        [x] Go ahead and fill it with some dummy numbers so it looks 
+            correct.
+        [x] Add a “clear” button.
