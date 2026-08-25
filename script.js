@@ -18,6 +18,11 @@ function divide(a, b) {
     return a / b;
 }
 
+// Create two var variables and an operator variable
+let var1;
+let var2;
+let operator;
+
 console.log(add(10, 20));
 console.log(subtract(10, 20));
 console.log(multiply(10, 20));
