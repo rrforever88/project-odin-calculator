@@ -38,6 +38,61 @@ function operate(var1, var2, sign) {
     };
 };
 
+// Listen to all buttons
+const buttons = document.querySelectorAll("button:not(#clear");
+const display = document.querySelector(".display");
+const clear = document.querySelector("#clear");
+
+let clickcount = 0;
+
+clear.addEventListener("click", () => {
+    clickcount = 0;
+    var1;
+    var2;
+    operator;
+    display.textContent = "";
+    return;
+});
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        clickcount++;
+
+        if(clickcount === 1) {
+            var1 = Number(button.textContent);
+            console.log(var1);
+        } else if (clickcount === 2) {
+            operator = button.textContent;
+            console.log(operator);
+        } else if (clickcount === 3) {
+            var2 = Number(button.textContent)
+        }
+        
+        // Run operations when user clicks =
+        if(button.textContent === "=") {
+            let result = input(operator);
+            display.append(result);
+        }
+
+    });
+});
+
+// Create input function
+function input(operator) {
+    if(operator === "+") {
+        return add(var1, var2);
+    } else if (operator === "-") {
+        return subtract(var1, var2);
+    } else if (operator === "*") {
+        return multiply(var1, var2);
+    } else if (operator === "/") {
+        return divide(var1, var2);
+    } else {
+        alert("Not a valid operations!");
+        return;
+    }
+}
+
 console.log(add(10, 20));
 console.log(subtract(10, 20));
 console.log(multiply(10, 20));

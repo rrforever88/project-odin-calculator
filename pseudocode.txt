@@ -31,3 +31,11 @@
         [x] Go ahead and fill it with some dummy numbers so it looks 
             correct.
         [x] Add a “clear” button.
+
+[x] Create the functions that update one of your number 
+    variables when the calculator’s digit buttons are clicked. 
+    Your calculator’s display should also update to reflect the 
+    value of that number variable.
+        [x] Create an input function
+        [x] Function should update variables based on button clicked
+        [x] Update display based on user inputs
